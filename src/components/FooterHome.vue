@@ -11,6 +11,12 @@
             <h4>Furniture Modern Design</h4>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam magnam quos quia maxime explicabo! Aliquam doloribus 
                 molestias, dolorem corporis enim quod ea ratione, deserunt, voluptates fuga eveniet quasi perferendis voluptas!</p>
+            <div class="social-media">
+                    <a href="https:/facebook.com"><font-awesome-icon icon="fa-brands fa-facebook"  size="2x"  /></a>
+                    <a href="https:/instagram.com"><font-awesome-icon icon="fa-brands fa-instagram" size="2x"/></a>
+                    <a href="https:/twitter.com"><font-awesome-icon icon="fa-brands fa-twitter" size="2x"/></a>
+                    <a href="https:/linkedin.com"><font-awesome-icon icon="fa-brands fa-linkedin-in" size="2x" /></a>
+            </div>
         </div>
         <div class="footer-nav">
             <nav>
@@ -45,7 +51,6 @@
 
     }
 
-
     .company-info{
 
         align-self: center;
@@ -58,6 +63,16 @@
 
         }
     }
+    .social-media{
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+        margin: 1em 0 1em 0;
+        color:#346083;
+        .fa-2x{
+            color:#346083;
+        }
+    }
 
     .footer-nav{
 
@@ -66,9 +81,13 @@
         nav{
 
             ul{
+
                 list-style: none;
+
                 li{
+
                     margin: 1em;
+
                     a{
                         color:#346083;
                         text-decoration: none;
@@ -85,7 +104,6 @@
 
     display: flex;
     justify-content: space-between;
-    margin-top: 2em ;
     border-top: 1px black solid;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8em;
