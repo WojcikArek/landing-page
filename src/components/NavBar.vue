@@ -2,7 +2,7 @@
 <template>
 <div class="nav-bar">
     <div class="logo-type">
-        <RouterLink to="/"><img src="../assets/img/logo-type.png" alt="logo-furniture"></RouterLink>
+        <RouterLink to="/"><img src="../assets/img/logo-type-nobg.png" alt="logo-furniture"></RouterLink>
     </div>
     <nav class="main-nav">
         <ul>
@@ -28,27 +28,38 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 1em ;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    border-bottom: 1px solid black;
     .logo-type{
 
         img{
+
             margin: 2em;
             width: 9em;
+
         }
     }
     .main-nav{
+
        margin-right: 2em;
+
         ul{
+
             display: flex;
             justify-content: space-around;
             list-style: none;
 
             li{
+
                 margin: 1em;
+
               a{
+
                 color:#346083;
                 text-decoration: none;
+
               }  
             }
         }
