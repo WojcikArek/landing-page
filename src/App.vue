@@ -1,17 +1,13 @@
 <script setup>
-import { RouterLink, RouterView } from "vue-router";
+
+import {RouterLink, RouterView } from "vue-router";
 import NavBar from './components/NavBar.vue';
-import FormValid from "./components/FormValid.vue";
-import Footer from "./components/Footer.vue"
+import FooterHome from "./components/FooterHome.vue"
+
 </script>
 
 <template>
  <NavBar/>
  <RouterView/>
- <FormValid/>
- <Footer/>
+ <FooterHome/>
 </template>
-
-<style scoped>
-
-</style>
