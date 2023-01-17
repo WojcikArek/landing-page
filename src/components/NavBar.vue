@@ -1,10 +1,10 @@
-<script>
-import { RouterView, RouterLink } from 'vue-router';
-</script>
+
 <template>
-<div>
-    <h1>Nav here!</h1>
-    <nav>
+<div class="nav-bar">
+    <div class="logo-type">
+        <RouterLink to="/"><img src="../assets/img/logo-type.png" alt="logo-furniture"></RouterLink>
+    </div>
+    <nav class="main-nav">
         <ul>
             <li><RouterLink to="/">Home</RouterLink></li>
             <li><RouterLink to="/about">About Us</RouterLink></li>
@@ -14,3 +14,44 @@ import { RouterView, RouterLink } from 'vue-router';
     </nav>
 </div>
 </template>
+
+<script>
+import { RouterView, RouterLink } from 'vue-router';
+  
+export default {
+    name: 'App'
+  }
+</script>
+
+<style lang="scss" scoped>
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    .logo-type{
+
+        img{
+            margin: 2em;
+            width: 9em;
+        }
+    }
+    .main-nav{
+       margin-right: 2em;
+        ul{
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+
+            li{
+                margin: 1em;
+              a{
+                color:#346083;
+                text-decoration: none;
+              }  
+            }
+        }
+    }
+}
+</style>
